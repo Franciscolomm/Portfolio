@@ -1,0 +1,148 @@
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-direction: row; /* ← TEXTO IZQUIERDA | IMAGEN DERECHA */
+}
+.about {
+  background-color: #020b1c;
+  padding: 120px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__container {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.about__title {
+  font-size: 44px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+
+.about__text {
+  max-width: 520px;
+  color: #d9d9d9;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about__text p {
+  margin-bottom: 25px;
+}
+
+.about__buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* Botón base (outline blanco) */
+.about__button {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+/* Hover del outline */
+.about__button:hover {
+  background-color: #ffffff;
+  color: #041c3a;
+}
+
+.about__image img {
+  width: 520px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+@media screen and (min-width: 320px) and (max-width: 544px) {
+
+  .about {
+    padding: 60px 25px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about__content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about__text {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .about__buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about__button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .about__image img {
+    width: 85%;
+    max-width: 320px;
+  }
+}
+
+
+
+/* ========================================================= */
+/* 📲📲📲 VISTA TABLET (545px – 1023px) */
+/* ========================================================= */
+
+@media screen and (min-width: 545px) and (max-width: 1023px) {
+
+  .about {
+    padding: 90px 40px;
+  }
+
+  .about__title {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about__content {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .about__text {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .about__image img {
+    width: 420px;
+  }
+
+  .about__buttons {
+    justify-content: center;
+  }
+}

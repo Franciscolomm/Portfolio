@@ -1,0 +1,166 @@
+.digitalmarketing {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.digitalmarketing__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.digitalmarketing__subtitle {
+  font-family: "Noto Serif", serif;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+/* ---- CARRUSEL ---- */
+.carousel-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 18px;
+}
+
+.carousel-img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ---- MODAL ---- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 544px) {
+
+  .digitalmarketing {
+    padding: 50px 15px;
+  }
+
+  .digitalmarketing__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .digitalmarketing__subtitle {
+    font-size: 15px;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .carousel-title {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  .carousel-track {
+    gap: 12px;
+  }
+
+  .carousel-img {
+    width: 240px;
+    border-radius: 8px;
+  }
+
+  /* Modal más accesible */
+  .modal-content {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+  .modal-close {
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+  }
+}
+
+
+
+/* ========================================================= */
+/* 📲📲📲 VISTA TABLET (545px – 1023px) */
+/* ========================================================= */
+
+@media screen and (min-width: 545px) and (max-width: 1023px) {
+
+  .digitalmarketing {
+    padding: 70px 30px;
+  }
+
+  .digitalmarketing__title {
+    font-size: 36px;
+  }
+
+  .digitalmarketing__subtitle {
+    font-size: 17px;
+    max-width: 80%;
+  }
+
+  .carousel-title {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+
+  .carousel-track {
+    gap: 16px;
+  }
+
+  .carousel-img {
+    width: 290px;
+  }
+
+  .modal-content {
+    max-width: 85%;
+    max-height: 75vh;
+  }
+}
